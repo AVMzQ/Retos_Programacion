@@ -1,0 +1,12 @@
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\bin\Debug\RetosProgramacion.exe.config
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\bin\Debug\RetosProgramacion.exe
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\bin\Debug\RetosProgramacion.pdb
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.csproj.AssemblyReference.cache
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.Form1.resources
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.Properties.Resources.resources
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.csproj.GenerateResource.cache
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.csproj.CoreCompileInputs.cache
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.exe
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.pdb
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.FizzBuzz.resources
