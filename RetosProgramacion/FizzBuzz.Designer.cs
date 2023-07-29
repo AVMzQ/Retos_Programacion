@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.flpFizBuz = new System.Windows.Forms.FlowLayoutPanel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
             this.btnStart2 = new System.Windows.Forms.Button();
             this.btnCustom = new System.Windows.Forms.Button();
             this.numeric = new System.Windows.Forms.NumericUpDown();
+            this.flpFizBuz = new System.Windows.Forms.FlowLayoutPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -70,20 +70,27 @@
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
-            // flpFizBuz
+            // tableLayoutPanel1
             // 
-            this.flpFizBuz.AutoScroll = true;
-            this.flpFizBuz.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flpFizBuz.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flpFizBuz.Location = new System.Drawing.Point(0, 0);
-            this.flpFizBuz.Name = "flpFizBuz";
-            this.flpFizBuz.Size = new System.Drawing.Size(526, 100);
-            this.flpFizBuz.TabIndex = 0;
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 1000;
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.btnStart, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnStart2, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnCustom, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.numeric, 1, 2);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(526, 116);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnStart
             // 
@@ -111,28 +118,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Fizz Buzz";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnStart, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnStart2, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.btnCustom, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.numeric, 1, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(526, 116);
-            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label2
             // 
@@ -196,6 +181,21 @@
             0,
             0});
             this.numeric.Visible = false;
+            // 
+            // flpFizBuz
+            // 
+            this.flpFizBuz.AutoScroll = true;
+            this.flpFizBuz.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpFizBuz.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flpFizBuz.Location = new System.Drawing.Point(0, 0);
+            this.flpFizBuz.Name = "flpFizBuz";
+            this.flpFizBuz.Size = new System.Drawing.Size(526, 100);
+            this.flpFizBuz.TabIndex = 0;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
             // 
             // FizzBuzz
             // 

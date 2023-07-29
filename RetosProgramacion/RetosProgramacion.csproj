@@ -59,6 +59,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LENGUAJE HACKER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LENGUAJE HACKER.Designer.cs">
+      <DependentUpon>LENGUAJE HACKER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LenguajeHacker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FizzBuzz.resx">
@@ -66,6 +73,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LENGUAJE HACKER.resx">
+      <DependentUpon>LENGUAJE HACKER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

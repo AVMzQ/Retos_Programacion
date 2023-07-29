@@ -13,12 +13,14 @@ namespace RetosProgramacion
      public enum frmHabilitados
     {
         Deshabilitado,
-        FizzBuzz
+        FizzBuzz,
+        LenguajeHacker
     }
     public partial class Form1 : Form
     {
         frmHabilitados frms = frmHabilitados.Deshabilitado;
         FizzBuzz fizzbuzz;
+        LENGUAJE_HACKER lenguajeH;
         public Form1()
         {
             InitializeComponent();
@@ -79,6 +81,20 @@ namespace RetosProgramacion
                 MessageBox.Show(ex.Message);
             }
         }
+        void cerrarLH(object sender, FormClosedEventArgs e)
+        {
+            try
+            {
+                lenguajeH = null;
+                frms = frmHabilitados.Deshabilitado;
+                button2.BackColor = Color.White;
+                button2.Text = "LENGUAJE HACKER";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void Form1_SizeChanged(object sender, EventArgs e)
         {
         }
@@ -91,6 +107,50 @@ namespace RetosProgramacion
                     panel1.Controls.Clear();
                     fizzbuzz.Dock = DockStyle.Fill;
                     panel1.Controls.Add(fizzbuzz);
+                }
+                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (button2.BackColor == Color.White)
+                {
+                    if (lenguajeH == null && frms == frmHabilitados.Deshabilitado)
+                    {
+                        frms = frmHabilitados.LenguajeHacker;
+
+                        lenguajeH = new LENGUAJE_HACKER();
+                        lenguajeH.FormClosed += new FormClosedEventHandler(cerrarLH);
+
+                        lenguajeH.TopLevel = false;
+                        lenguajeH.MinimizeBox = false;
+                        lenguajeH.Dock = DockStyle.Fill;
+                        panel1.Controls.Add(lenguajeH);
+                        lenguajeH.Show();
+
+                        button2.BackColor = Color.LightBlue;
+                        button2.Text = "Cerrar LENGUAJE HACKER";
+                        button2.AutoSize = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya tienes habierto un reto!\nCierralo antes de abrir otro retro.", "Aviso");
+                    }
+                }
+                else
+                {
+                    panel1.Controls.Clear();
+                    lenguajeH = null;
+                    frms = frmHabilitados.Deshabilitado;
+                    button2.BackColor = Color.White;
+                    button2.Text = "LENGUAJE HACKER!";
                 }
             }
             catch (Exception ex)

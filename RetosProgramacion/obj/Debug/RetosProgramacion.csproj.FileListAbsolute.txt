@@ -10,3 +10,4 @@ C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosP
 C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.exe
 C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.pdb
 C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.FizzBuzz.resources
+C:\Users\angel\source\repos\RetosProgramacion\RetosProgramacion\obj\Debug\RetosProgramacion.LENGUAJE_HACKER.resources

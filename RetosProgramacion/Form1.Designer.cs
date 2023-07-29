@@ -34,9 +34,10 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.lblReto = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mENUToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -77,6 +78,7 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -126,7 +128,7 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(671, 47);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(150, 47);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // lblReto
@@ -138,6 +140,14 @@
             this.lblReto.Size = new System.Drawing.Size(43, 13);
             this.lblReto.TabIndex = 1;
             this.lblReto.Text = "label1";
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(578, 284);
+            this.panel1.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -166,13 +176,19 @@
             this.mENUToolStripMenuItem.Text = "M E N U";
             this.mENUToolStripMenuItem.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             // 
-            // panel1
+            // button2
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(578, 284);
-            this.panel1.TabIndex = 0;
+            this.button2.AutoSize = true;
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(3, 42);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 37);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "LENGUAJE HACKER!";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
@@ -195,6 +211,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -218,6 +235,7 @@
         private System.Windows.Forms.Label lblReto;
         public System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
